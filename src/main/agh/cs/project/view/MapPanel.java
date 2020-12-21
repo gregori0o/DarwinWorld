@@ -22,6 +22,7 @@ public class MapPanel extends JPanel {
     public void drawMap (MapStatus status, JungleMap map) {
         this.removeAll();
         int maxEnergy = status.getMaxEnergy();
+        if (maxEnergy==0) maxEnergy=1;
         ConcurrentHashMap<Vector2d, IMapElement> elements = status.getElements();
         for (Map.Entry<Vector2d, IMapElement> entry : elements.entrySet()) {
             if (entry.getValue() instanceof Plant) {
