@@ -24,7 +24,7 @@ public class AnimalTracking implements ActionListener {
     private int dayStart;
 
     public AnimalTracking (Engine engine, Vector2d position) {
-        newFrame.setSize(450,200);
+        newFrame.setSize(450,250);
         newFrame.getContentPane().setBackground(new Color(181, 243, 218));
         newFrame.setLayout(new FlowLayout());
         newFrame.setVisible(true);
@@ -35,16 +35,18 @@ public class AnimalTracking implements ActionListener {
         JLabel genotype = new JLabel();
         genotype.setText(trackedAnimal.getGenes().toString());
         newFrame.add(genotype);
+        JLabel energy = new JLabel();
+        energy.setText("Energia zwierzęcia wynosi: "+trackedAnimal.getEnergy());
+        newFrame.add(energy);
 
-        buttonSubmit = new JButton();
-        buttonSubmit.addActionListener(this);
-        buttonSubmit.setText("Załaduj liczbę epok");
-        newFrame.add(buttonSubmit);
         submitField = new JTextField();
         submitField.setPreferredSize(new Dimension(400,100));
         submitField.setFont(new Font("Consolas",Font.PLAIN,50));
         newFrame.add(submitField);
-
+        buttonSubmit = new JButton();
+        buttonSubmit.addActionListener(this);
+        buttonSubmit.setText("Załaduj liczbę epok");
+        newFrame.add(buttonSubmit);
     }
 
     @Override
@@ -106,7 +108,7 @@ public class AnimalTracking implements ActionListener {
         if (dayDead==0)
             dead.setText("Zwierzę nadal żyje");
         else
-            dead.setText("Śmierć w epoce: "+dayDead+" ("+(dayDead-dayStart)+")");
+            dead.setText("Śmierć w epoce: "+dayDead+" ("+(dayDead-dayStart)+" eppok przeżył od zatrzymania)");
         result.add(dead);
     }
 }
