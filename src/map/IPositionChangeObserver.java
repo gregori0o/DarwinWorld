@@ -1,6 +1,6 @@
-package agh.cs.project.map;
+package map;
 
-import agh.cs.project.elements.Animal;
+import elements.Animal;
 
 public interface IPositionChangeObserver {
 

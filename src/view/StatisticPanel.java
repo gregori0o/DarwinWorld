@@ -1,6 +1,6 @@
-package agh.cs.project.view;
+package view;
 
-import agh.cs.project.map.*;
+import map.*;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;

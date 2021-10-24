@@ -1,7 +1,7 @@
-package agh.cs.project.elements;
+package elements;
 
-import agh.cs.project.map.*;
-import agh.cs.project.data.*;
+import map.*;
+import data.*;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package agh.cs.project.data;
+package data;
 
 public enum MapDirection {
     N,

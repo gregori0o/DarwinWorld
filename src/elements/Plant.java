@@ -1,7 +1,7 @@
-package agh.cs.project.elements;
+package elements;
 
-import agh.cs.project.map.*;
-import agh.cs.project.data.*;
+import map.*;
+import data.*;
 
 public class Plant implements IMapElement {
     private Vector2d position;

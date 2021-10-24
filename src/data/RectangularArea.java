@@ -1,4 +1,4 @@
-package agh.cs.project.data;
+package data;
 
 import java.util.Set;
 import java.util.HashSet;

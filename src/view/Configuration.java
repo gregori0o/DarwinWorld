@@ -1,4 +1,4 @@
-package agh.cs.project.view;
+package view;
 
 import com.google.gson.*;
 import javax.swing.*;

@@ -1,8 +1,8 @@
-package agh.cs.project.view;
+package view;
 
-import agh.cs.project.map.*;
-import agh.cs.project.data.*;
-import agh.cs.project.elements.*;
+import map.*;
+import data.*;
+import elements.*;
 
 import com.google.gson.*;
 
